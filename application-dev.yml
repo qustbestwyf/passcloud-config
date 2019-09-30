@@ -13,13 +13,13 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: paascloud-mq-rabbit
+    host: rabbitmq.yifengtec.com
     port: 5672
-    username: guest
-    password: guest
+    username: app
+    password: apppass
   redis:
-    host: paascloud-db-redis
-    password: paascloud@redis
+    host: redis.yifengtec.com
+    password: redispass
     port: 6379
     timeout: 0
   datasource:
@@ -136,4 +136,4 @@ paascloud:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: zk.yifengtec.com:2181
